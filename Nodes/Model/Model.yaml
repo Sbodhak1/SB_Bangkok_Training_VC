@@ -278,3 +278,43 @@ Children:
         Type: PropertyType
         DataType: UInt16
         Value: 0
+- Name: Variable5
+  Id: g=c7e38791ac502cec40ad25ec4ecf90f3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "Low": 0.0,
+       "High": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+- Name: Variable6
+  Id: g=9eee98a40b5c6302a06c49e9e0a22f5d
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: Variable7
+  Id: g=bbd06d63c15345de7fa2fb7d0b9563fc
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0

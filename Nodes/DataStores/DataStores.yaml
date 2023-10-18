@@ -46,6 +46,48 @@ Children:
           Type: StoreColumn
           DataType: Int32
           Value: 0
+    - Name: DataLogger2
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Variable1
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Variable2
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Variable3
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Variable5
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
   - Class: Reference
     Target: ns=10;i=30
     Direction: Forward

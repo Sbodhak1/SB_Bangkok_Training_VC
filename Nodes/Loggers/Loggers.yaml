@@ -5,9 +5,59 @@ Children:
   Type: DataLogger
   Children:
   - Name: SamplingMode
+    Id: g=c131675f922075e5db63c79b514f92f3
     Type: PropertyType
     DataType: SamplingModeEnum
     Value: 2
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Variable6"
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 0
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 0
+        - Name: Pair1
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 1
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 1
+        - Name: Pair2
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 2
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 2
   - Name: Store
     Type: NodePointer
     DataType: NodeId
@@ -54,7 +104,7 @@ Children:
       - Name: DeadBandValue
         Type: PropertyType
         DataType: Double
-        Value: 35.0
+        Value: 0.0
     - Name: Variable2
       Type: VariableToLog
       DataType: BaseDataType
@@ -116,11 +166,11 @@ Children:
       - Name: DeadBandMode
         Type: PropertyType
         DataType: DeadBandModeEnum
-        Value: 1
+        Value: 0
       - Name: DeadBandValue
         Type: PropertyType
         DataType: Double
-        Value: 10.0
+        Value: 0.0
   - Class: Reference
     Target: ns=8;i=21
     Direction: Forward
@@ -140,6 +190,202 @@ Children:
     Type: PropertyType
     DataType: Duration
     Value: "0:00:00:1.0000000"
+  - Name: DefaultDeadBandValue
+    Type: PropertyType
+    DataType: Double
+    Value: 5.0
+- Name: DataLogger2
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=c72ecfe05ad6f8e1ae6b501fa5a849d5
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 2
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Variable7"
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 0
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 0
+        - Name: Pair1
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 1
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 1
+        - Name: Pair2
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Int16
+            Value: 2
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 2
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"9a62222c5f6173e7d76b71738fa73317","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":9}
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Variable2
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Variable3
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable3"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Variable5
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable5"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=8;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:5.0000000"
+  - Name: DefaultDeadBandMode
+    Type: PropertyType
+    DataType: DeadBandModeEnum
+    Value: 1
   - Name: DefaultDeadBandValue
     Type: PropertyType
     DataType: Double

@@ -158,6 +158,23 @@ Children:
     Children:
     - Name: Default
       Type: ChartStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
+      - Name: AxisColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: GridColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f0"
   - Name: DataListStyles
     Type: BaseObjectType
     Children:
@@ -318,6 +335,38 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: {"IdType":2,"Id":"9d7f90427fa9e84a3a1727cd04ee552c","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
+      - Name: Panel4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"7fb34f68ee457b490023ea36f0c97ce7","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
+      - Name: Panel5
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"03d46f48677cdf7b7068747dd3658cdf","Namespace":7}
           Children:
           - Name: Kind
             Type: PropertyType
