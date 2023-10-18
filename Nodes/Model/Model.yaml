@@ -1,0 +1,103 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: MotorInstance
+  Type: Motor
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Motor
+  Id: g=707c8331b0e6fe5c39583b4941d42192
+  Supertype: BaseObjectType
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Motor1
+  Id: g=2f16e3e6a82ca278f4c0ed65d4b2c813
+  Type: Motor
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Motor2
+  Id: g=3f45fa6d461e93e062ab01fe3ffe8b4f
+  Type: Motor
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Motor3
+  Id: g=da427fc61be12aba409c263dbe5bb2fd
+  Type: Motor
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Motor4
+  Id: g=b216cf4c878df63ce3d872b1646d3864
+  Type: Motor
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Variable1
+  Id: g=a556b72a2d2941b6734539a256613fac
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
