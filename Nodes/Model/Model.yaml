@@ -101,3 +101,8 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
+- Name: Variable2
+  Id: g=b99d3250d8fe9189a337e961f0bf23bc
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
