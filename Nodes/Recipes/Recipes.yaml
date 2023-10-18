@@ -1,2 +1,92 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=4033ada2d32aea3f1d1c2508c0aca2e1
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+  - Class: Reference
+    Target: ns=25;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"9a62222c5f6173e7d76b71738fa73317","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":9}
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"a9aa0b3ffcf3276ef2e1fd0138c1deca","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=06a93b345aa855f0127e53d607e40d45
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""

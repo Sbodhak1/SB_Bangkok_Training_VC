@@ -1,3 +1,160 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=759ef2e63393136e74c95f7224eef862
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=567d2fca8892a6d29acc29afa3e07181
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=48a26f90b21ddaf933973255f6526ac1
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=a940bcccf567aba50c98dae2bc36ead7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm_1"
+      Children:
+      - Name: Mode
+        Id: g=2e75bba580ef1c79853dfadc686f59d2
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d3a125e007fd8688ff19829cfca8151a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=20;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=83
+    Direction: Forward
+  - Name: Severity
+    Id: g=5b881a1b760aee63b67898ee2fc6575e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: Active
+    Id: g=5cf323fb9c5b5173c7e748da046a1895
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+- Name: DigitalAlarm2
+  Id: g=65be3950641cd1c393f8ac91128be4e5
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=3bfd57112d8e3385112f961caa41f416
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=e805e4586c611b64f4bc6a06d46bdef6
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=48396b09ac63ba93d6d513365156148c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm_2"
+      Children:
+      - Name: Mode
+        Id: g=40e3dd6cc0acc4f1f77cd097b1f77488
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=b48adea284a4c795d047fb9e20dbf7a5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=20;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=83
+    Direction: Forward
+  - Name: Severity
+    Id: g=46935fceadd97c2e9bb5b9801c77a69e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: Active
+    Id: g=da828709fac5f1311a1f3b36971310f6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+- Name: DigitalAlarm3
+  Id: g=e440839ae65f30edb047ec34355ae7cb
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=d1e8fca72b5b6804a5cd3cb49340e8bb
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=7729db427c1a5694891b14da348fd4b8
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=0644484665e573972b11a8eeeaec3183
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm_3"
+      Children:
+      - Name: Mode
+        Id: g=5c3a127db1394e043c8aa234716670ba
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=291e1b10d530cf7808bfcdb6dc28d7a3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=20;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=20;i=83
+    Direction: Forward
+  - Name: Severity
+    Id: g=b71d09206bbd81daf5d993c28cf25e21
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: Active
+    Id: g=9a1d2d4952b1fe25b6d7c22999e6738d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false

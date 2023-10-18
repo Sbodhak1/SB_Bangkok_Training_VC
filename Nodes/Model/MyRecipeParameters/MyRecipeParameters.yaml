@@ -1,0 +1,19 @@
+Name: MyRecipeParameters
+Id: g=a9aa0b3ffcf3276ef2e1fd0138c1deca
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=fa2fd09e08a9c88692aa9972d26a8199
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable2
+  Id: g=ef964903b38055ec3052bfeac01d7a58
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=75b7782b92f900bf61f6aa03cdee4c3b
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

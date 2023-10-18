@@ -317,4 +317,20 @@ Children:
   Id: g=bbd06d63c15345de7fa2fb7d0b9563fc
   Type: BaseDataVariableType
   DataType: Int16
-  Value: 0
+  Value: 1
+- Name: Alarm_1
+  Id: g=3fc59c6de3f9305573f9e1926425f9be
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Alarm_2
+  Id: g=fff9e5cd884e65a162685c676e86bfee
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Alarm_3
+  Id: g=b98e45b0bf61137f2ba61eddcdcc1665
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- File: MyRecipeParameters/MyRecipeParameters.yaml
