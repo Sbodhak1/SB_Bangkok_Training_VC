@@ -10245,7 +10245,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 30.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -10255,12 +10255,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 420.0
+      Value: 390.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 380.0
+      Value: 280.0
   - Name: UserEditorOverview1
     Type: UserEditorOverview
     Children:
@@ -10629,12 +10629,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 1040.0
+      Value: 920.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 760.0
+      Value: 670.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -10644,16 +10644,39 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 300.0
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Groups/Administrator"
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}||{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrator"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Users"
   - Name: Switch1
     Type: Switch
     Children:
@@ -10680,7 +10703,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 30.0
+      Value: 10.0
     - Name: CheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10691,10 +10714,33 @@ Children:
       DataType: Boolean
       Value: true
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Groups/Administrator"
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}||{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrator"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrators"
     - Name: UncheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10726,12 +10772,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 480.0
+      Value: 700.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
+      Value: 10.0
     - Name: CheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10750,7 +10796,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0} || {1}"
+          Value: "{0} || {1}||{2}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -10769,6 +10815,15 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Session}/Groups/Engineer"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrators"
     - Name: UncheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10805,7 +10860,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 170.0
+      Value: 90.0
     - Name: CheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10824,7 +10879,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0}||{1}"
+          Value: "{0}||{1}||{2}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -10843,6 +10898,15 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Session}/Groups/Maintenance"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrators"
     - Name: UncheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10874,12 +10938,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 480.0
+      Value: 700.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 240.0
+      Value: 80.0
     - Name: CheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10898,7 +10962,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0}||{1}"
+          Value: "{0}||{1}||{2}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -10917,6 +10981,15 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Session}/Groups/Operator"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrators"
     - Name: UncheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10953,7 +11026,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 310.0
+      Value: 170.0
     - Name: CheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -10972,7 +11045,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0}||{1}"
+          Value: "{0}||{1}||{2}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -10991,6 +11064,15 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Session}/Groups/Technician"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Administrators"
     - Name: UncheckedText
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -11036,7 +11118,63 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 170.0
+      Value: 150.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#0fafff"
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: ""
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 800
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"User Domain : {0}"}
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/User/Domain"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 705.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 194.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size

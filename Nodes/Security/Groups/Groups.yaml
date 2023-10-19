@@ -17,3 +17,9 @@ Children:
 - Name: Technician
   Id: g=4c8049aa29e071ac0a2755b8af9d05e2
   Type: GroupType
+- Name: Administrators
+  Id: g=9e8e1c3c52b0ab57c6018348ac73d5f3
+  Type: GroupType
+- Name: Users
+  Id: g=20e5fab9589fc9698c25fa500b77351b
+  Type: GroupType
