@@ -1,3 +1,19 @@
 Name: Groups
 Id: g=33ac98afcbbcd645bc8146197074cc43
 Type: GroupsCategoryFolder
+Children:
+- Name: Engineer
+  Id: g=3867b3a261f50cd3bc112361353d14f7
+  Type: GroupType
+- Name: Administrator
+  Id: g=3af22d3ed06b6b6cc68990994dc9f1f8
+  Type: GroupType
+- Name: Operator
+  Id: g=c282890b3a48028e5ff695c4a39b6720
+  Type: GroupType
+- Name: Maintenance
+  Id: g=9220a6217328e0b166aeef07cfdfc43a
+  Type: GroupType
+- Name: Technician
+  Id: g=4c8049aa29e071ac0a2755b8af9d05e2
+  Type: GroupType

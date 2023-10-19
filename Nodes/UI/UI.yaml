@@ -230,6 +230,97 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 18.0
+- Name: MyUISession
+  Id: g=92babf997aa933df5c6c7bf3f8e3a1f7
+  Supertype: UISession
+  Children:
+  - Name: IsInteractive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: true
+  - Name: IsNative
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Name: IsWeb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Name: IpAddress
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Name: User
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":14,"Namespace":1}
+  - Name: ActualLocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: ""
+  - Name: ActualLanguage
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: ""
+  - Name: ActualMeasurementSystem
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 0
+  - Name: TimeZoneOffset
+    Type: BaseVariableType
+    DataType: TimeZoneDataType
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: 
+     {
+      "TypeId": {
+       "Id": 8912
+      },
+      "Body": {
+       "Offset": 0,
+       "DaylightSavingInOffset": false
+      }
+     }
+  - Name: Groups
+    Type: BaseObjectType
+  - Name: Roles
+    Type: BaseObjectType
+  - Name: Rights
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=1;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=266
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=269
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=272
+    Direction: Forward
+  - Name: LoggedIn
+    Type: BaseVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
@@ -267,6 +358,159 @@ Children:
       Value: {"Id":14,"Namespace":1}
   - Name: Sessions
     Type: BaseObjectType
+  - Name: Session
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"92babf997aa933df5c6c7bf3f8e3a1f7","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":665,"Namespace":3}
+- Name: WebPresentationEngine
+  Type: ns=27;PresentationEngine
+  Children:
+  - Name: Protocol
+    Type: BaseDataVariableType
+    DataType: Protocol
+    Value: 0
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "10.116.18.5"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8080
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"01a7e8933afd7c95fe894b0859308138","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":12,"Namespace":3}
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"8da2b5865c73184b748c69f73d34bedf","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":447,"Namespace":3}
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"Id":46,"Namespace":1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":14,"Namespace":1}
+  - Name: Sessions
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: IsNative
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: IsWeb
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: IpAddress
+        Type: BaseDataVariableType
+        DataType: String
+        AccessLevel: Read
+        Value: ""
+      - Name: User
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":14,"Namespace":1}
+      - Name: ActualLocaleId
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        Value: ""
+      - Name: ActualLanguage
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        Value: ""
+      - Name: ActualMeasurementSystem
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+        Value: 0
+      - Name: TimeZoneOffset
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+        Value: 
+         {
+          "TypeId": {
+           "Id": 8912
+          },
+          "Body": {
+           "Offset": 0,
+           "DaylightSavingInOffset": false
+          }
+         }
+      - Name: Groups
+        Type: BaseObjectType
+      - Name: Roles
+        Type: BaseObjectType
+      - Name: Rights
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Type: BaseVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+  - Name: Session
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"92babf997aa933df5c6c7bf3f8e3a1f7","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":665,"Namespace":3}
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -404,6 +648,38 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: {"Id":71,"Namespace":3}
+      - Name: Panel8
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Language"}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"23c701fe2c6f7d66d6228c7cdf9d2040","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
+      - Name: Panel9
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"User"}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"1395e7fd17e99ad39be7b09242f6aca0","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -434,6 +710,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 1080.0
+  - Name: IdleTimeoutLogic
+    Type: NetLogic
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:01:00:0.0000000"
+    - Name: OnTimeout
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":58}
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
 - File: Screens/Screens.yaml
 - Name: DialogBox1
   Id: g=80f2dc56f57eed80f8367e0653f9aa7a
@@ -725,3 +1032,5 @@ Children:
       DataType: NodeId
       Value: {"Id":71,"Namespace":3}
 - File: Template/Template.yaml
+- File: UserEditor/UserEditor.yaml
+- File: LoginForm/LoginForm.yaml

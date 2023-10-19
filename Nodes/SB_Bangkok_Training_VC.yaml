@@ -9,7 +9,7 @@ Children:
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["en-US"]
+    Value: ["en-US","hi-IN","zh-CN","th-TH"]
   - Name: LocaleFallbackList
     Type: BaseDataVariableType
     DataType: LocaleId

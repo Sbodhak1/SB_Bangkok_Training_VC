@@ -1,18 +1,23 @@
 Name: Model
+Id: g=dfc2f049560838a7e6f883a5d12b0e20
 Type: ModelCategoryFolder
 Children:
 - Name: MotorInstance
+  Id: g=118919452c1c6fa956af2ac4d6673f23
   Type: Motor
   Children:
   - Name: Running
+    Id: g=a62e0ac6e3e39cc6b2d3e722a9319eee
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=abbd2627a7e79344a4dc4e85336338a3
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=5370c445194c7270b7fb1e6f160bfb24
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -21,14 +26,17 @@ Children:
   Supertype: BaseObjectType
   Children:
   - Name: Running
+    Id: g=a6c89cc9a4506b968b90c7ea575b4011
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=61b87209e467fc36982d8ee100b3b8f6
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=29723ce1d5b527f8bd438298bdb5d07f
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -37,14 +45,17 @@ Children:
   Type: Motor
   Children:
   - Name: Running
+    Id: g=a10e9ea85dc0572abe0710f63b5c3963
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=14441bfcbab6bc2e96cd5d760bff5411
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=dbd575f973a57fa6b4e9653c63909c9d
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -53,14 +64,17 @@ Children:
   Type: Motor
   Children:
   - Name: Running
+    Id: g=2a0941d246f3823092f27d10e39515a1
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=d9deadebb90b21050a0cd6029a7053a8
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=1de68add1b8468c070fe5c443a25d9d4
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -69,14 +83,17 @@ Children:
   Type: Motor
   Children:
   - Name: Running
+    Id: g=42e2b930edf5406855b35faaf6afc203
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=d4b0e4ecaeed3b520284452fc530ad0c
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=47f332c027bf441ed547a17c498a5588
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -85,14 +102,17 @@ Children:
   Type: Motor
   Children:
   - Name: Running
+    Id: g=188095dbc0292c97a5e1fc97aa03fd58
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: Speed
+    Id: g=c51f4812f88063295d92cf916d580c8d
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
   - Name: Power
+    Id: g=90041387f776f146bcb6883859df36b1
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -103,6 +123,7 @@ Children:
   Value: 0
   Children:
   - Name: ns=0;EURange
+    Id: g=783522b09f098b2721d3d83ca32b3262
     Type: RangeType
     DataType: Range
     Value: 
@@ -117,11 +138,13 @@ Children:
      }
     Children:
     - Name: Low
+      Id: g=fa76f8825b34b94a9b83ad7f83cb79d1
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 0.0
     - Name: High
+      Id: g=c1a3fc0750bbdcdbe62b297f7ea94aba
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
@@ -133,6 +156,7 @@ Children:
   Value: 0
   Children:
   - Name: ns=0;EURange
+    Id: g=4ecfa20249c6b106911910ce5d596c4d
     Type: RangeType
     DataType: Range
     Value: 
@@ -147,11 +171,13 @@ Children:
      }
     Children:
     - Name: Low
+      Id: g=0614922eeb0074d9a39138804c28feaf
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 0.0
     - Name: High
+      Id: g=d7cc74520efe7e7ec05d690cc9d2b589
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
@@ -163,6 +189,7 @@ Children:
   Value: 0
   Children:
   - Name: ns=0;EURange
+    Id: g=baf2cbceaf7bd22b1e69faeb682e1c35
     Type: RangeType
     DataType: Range
     Value: 
@@ -177,11 +204,13 @@ Children:
      }
     Children:
     - Name: Low
+      Id: g=9d1f9eabd778f609f504b69455bb8da3
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 0.0
     - Name: High
+      Id: g=84c5bd18c414fa2631f90331c3d39e07
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
@@ -192,89 +221,112 @@ Children:
   DataType: Boolean
   Value: false
 - Name: Variable4Changed
+  Id: g=1285797ff6ae2b17077b35061636fb80
   Type: VariableChangedEventDispatcher
   Children:
   - Name: VariableNodePath
+    Id: g=2be41392be5c12c3afac702617145ca7
     Type: BaseVariableType
     DataType: NodePath
     Value: "../Variable4"
   - Name: VariableValueChangedEventHandler1
+    Id: g=fef67386bed8b4c16f9c176b765e1e1a
     Type: EventHandler
     Children:
     - Name: ListenEventType
+      Id: g=763115e3497e1e6d0ae011893fffd585
       Type: PropertyType
       DataType: NodeId
       Value: {"Id":42,"Namespace":2}
     - Name: MethodsToCall
+      Id: g=e7b4a72d4536519cccab9a2c18404680
       Type: BaseObjectType
       Children:
       - Name: MethodContainer1
+        Id: g=d9319bd2ea913f629136766aa94a4f75
         Type: BaseObjectType
         Children:
         - Name: ns=2;ObjectPointer
+          Id: g=45c81746a4a2cf261799660cced6e69d
           Type: NodePointer
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: Kind
+            Id: g=60d644da762ca50c63108024a3e253cf
             Type: PropertyType
             DataType: NodeId
             Value: {"Id":58}
           - Name: DynamicLink
+            Id: g=9d7c466d6ccb3274e63a639f92d357fc
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../../../Loggers/DataLogger1@NodeId"
             Children:
             - Name: Mode
+              Id: g=4b3781f3fd6938adb03a398d360dcfe5
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
         - Name: ns=2;Method
+          Id: g=63bca81c064bae74a25ee12fea79cf97
           Type: BaseDataVariableType
           DataType: String
           Value: "Log"
     - Name: EventArguments
+      Id: g=0f0804893822522e0443f183cec8d442
       Type: VariableValueChangedEvent
       Children:
       - Name: VariableNodeId
+        Id: g=fdfa948e49ffe5b3034fa6642abcd58f
         Type: BaseVariableType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: NewValue
+        Id: g=61844522b5a24d72eab01b0ff5882b1a
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: OldValue
+        Id: g=4569d733ba2c7b1056083bfc1ca63ad9
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: EventId
+        Id: g=62cf2635a2967d0f11db917d61df60d8
         Type: PropertyType
         DataType: ByteString
         Value: ""
       - Name: EventType
+        Id: g=57bf87edfc24669493803bc8f9e8c5ff
         Type: PropertyType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceNode
+        Id: g=33c6c61846bef661c19035eca9e113d6
         Type: PropertyType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceName
+        Id: g=94ffec16aa62f249f14009c982fe49a0
         Type: PropertyType
         DataType: String
         Value: ""
       - Name: Time
+        Id: g=54e2639c76427e2f2794c622b9ab6e30
         Type: PropertyType
         DataType: UtcTime
         Value: "1601-01-01T00:00:00.0000000"
       - Name: ReceiveTime
+        Id: g=e5cacee58934edc7ecf98494955e2d82
         Type: PropertyType
         DataType: UtcTime
         Value: "1601-01-01T00:00:00.0000000"
       - Name: Message
+        Id: g=9914fa9429afb759d3f6ef61abd8bcb8
         Type: PropertyType
         DataType: LocalizedText
         Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Severity
+        Id: g=6d9214ac070fc02b465257c41dca6089
         Type: PropertyType
         DataType: UInt16
         Value: 0
@@ -285,6 +337,7 @@ Children:
   Value: 0
   Children:
   - Name: ns=0;EURange
+    Id: g=cc219b48d5aaf6053b11f96725888612
     Type: RangeType
     DataType: Range
     Value: 
@@ -299,11 +352,13 @@ Children:
      }
     Children:
     - Name: Low
+      Id: g=aaf867f1a9c3a2fb927a420106110f2f
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 0.0
     - Name: High
+      Id: g=b441d450508828f6a0af3e07a0e9d071
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
@@ -323,6 +378,60 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
+- Name: Variable8
+  Id: g=3861ff46d9edd99ffe990cff0464f0a6
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 50
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Id: g=c63fe8bfe28c92b4e4217bdc29745b40
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: 
+     {
+      "TypeId": {
+       "Id": 887
+      },
+      "Body": {
+       "NamespaceUri": "",
+       "UnitId": 0,
+       "DisplayName": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       },
+       "Description": {
+        "NamespaceIndex": -1,
+        "LocaleId": "",
+        "Text": ""
+       }
+      }
+     }
+    Children:
+    - Name: UnitId
+      Id: g=26ad3735298dd85111db8b78888ea700
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4934984
+    - Name: DisplayName
+      Id: g=a93a00fd898cbbeb9aa24c36b87f5604
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=efd5d4a01c8de890e6e1b9fa488d11ef
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Variable9
+  Id: g=7e5570ca66cff42d9533dc4f19b5315f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
 - Name: Alarm_2
   Id: g=fff9e5cd884e65a162685c676e86bfee
   Type: BaseDataVariableType
@@ -334,3 +443,13 @@ Children:
   DataType: Boolean
   Value: false
 - File: MyRecipeParameters/MyRecipeParameters.yaml
+- Name: Language_V
+  Id: g=6044d94a994f1aacfb2f4a5a1cc7c24b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable10
+  Id: g=11b9e3ef3918105012466b33871b36bf
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

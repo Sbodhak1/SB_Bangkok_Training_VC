@@ -105,5 +105,13 @@ Project:
    Uri: 'urn:FTOptix:Recipe:Net'
    Module: FTOptix.Recipe.Net
    Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.1
+  28:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.1
  Nodes:
  - File: Nodes/SB_Bangkok_Training_VC.yaml
